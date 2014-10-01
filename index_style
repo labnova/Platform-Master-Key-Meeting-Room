@@ -1,0 +1,182 @@
+@import url(http://fonts.googleapis.com/css?family=Lato:300,400,700);
+@import url('font-awesome.css');
+
+*,
+*:after,
+*: before {
+	 -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+	font: 100%/1.4 Verdana, Arial, Helvetica, sans-serif;
+	background: #ddd url(../images/bg.jpg) repeat top left;
+	margin: 0;
+	padding: 0;
+	
+}
+
+
+
+.container {
+	width: 90%;
+	max-width: 1260px;
+	min-width: 780px;/* a min-width may be desirable to keep this layout from getting too narrow. This keeps line length more readable in the side columns. IE6 does not respect this declaration. */
+	
+	margin: 0 auto; /* the auto value on the sides, coupled with the width, centers the layout. It is not needed if you set the .container's width to 100%. */
+	align:center;
+}
+
+
+.content {
+	padding: 10px 0;
+}
+
+
+.clearfloat { /* this class can be placed on a <br /> or empty div as the final element following the last floated div (within the #container) if the overflow:hidden on the .container is removed */
+	clear:both;
+	height:0;
+	font-size: 1px;
+	line-height: 0px;
+}
+
+/*--------STYLE FORM-------*/
+
+.form-1 {
+	width: 1200px;
+	margin: 200px auto 30px;
+	padding: 10px;
+	position: relative;
+	
+	box-shadow: 
+		0 0 1px rgba(0,0,0, 0.3),
+		0 3px 7px rgba(0,0,0, 0.3),
+		inset 0 1px rgba(255,255,255,1),
+        inset 0 -3px 2px rgba(0,0,0,0.25);
+		
+	border-radius: 5px;
+	background: linear-gradient(#eeefef, #ffffff 10%);
+	
+}
+
+.form-1 .field {
+	position: relative;
+}
+
+.form-1 .field i {
+	
+	left: 0px;
+	top: 0px;
+	position: absolute;
+	height: 36px;
+	width: 36px;
+	
+	border-right: 1px solid rgba(0,0,0, 0.1);
+	box-shadow: 1px 0 0 rgba(255, 255, 255, 0.7);
+	
+	color: #777777;
+	text-align: center;
+	line-height: 42px;
+	transition: all 0.3s ease-out;
+	pointer-events: none;
+}
+
+
+.form-1 input[type=password] {
+	font-family: 'Lato', Calibri, Arial, sans-serif;
+	font-size: 30px;
+	font-weight: 400;
+	text-shadow: 0 1px 0 rgba(255, 255, 255, 0.8);
+	
+	width: 95%;
+	padding: 10px 18px 10px 45px;
+	
+	border: none;
+	box-shadow: 
+        inset 0 0 5px rgba(0,0,0,0.1),
+        inset 0 3px 2px rgba(0,0,0,0.1);
+		
+	border-radius: 3px;
+	background: #f9f9f9;
+	color: #777;
+	transition: color 0.3s ease-out;
+}
+
+.form-1 button {
+    /* Size and position */
+    width: 100%;
+    height: 100%;
+    margin-top: -1px;
+ 
+    /* Icon styles */
+    font-size: 1.4em;
+    line-height: 1.75;
+    color: white;
+ 
+    /* Styles */
+    border: none; /* Remove the default border */
+    border-radius: inherit;
+    background: linear-gradient(#52cfeb, #42A2BC);
+    box-shadow: 
+        inset 0 1px 0 rgba(255,255,255,0.3),
+        0 1px 2px rgba(0,0,0,0.35),
+        inset 0 3px 2px rgba(255,255,255,0.2),
+        inset 0 -3px 2px rgba(0,0,0,0.1);
+ 
+    cursor: pointer;
+}
+
+.form-1 .submit {
+	width: 65px;
+	height: 65px;
+	position: absolute;
+	top: 0;
+	right: -25px;
+	padding: 10px;
+	z-index: 2;
+	background: #ffffff;
+	border-radius: 50%;
+	box-shadow:
+	 	0 0 2px rgba(0,0,0,0.1),
+        0 3px 2px rgba(0,0,0,0.1),
+        inset 0 -3px 2px rgba(0,0,0,0.2);
+	
+}
+
+.form-1 button:hover,
+.form-1 button[type=submit]:focus {
+	background: #52cfeb;
+	transition: all 0.3s ease-out;
+	
+}
+
+.form-1 button:active {
+	background. #42a2bc;
+	box-shadow:
+		inset 0 0 5px rgba(0,0,0,0.3),
+        inset 0 3px 4px rgba(0,0,0,0.3);
+		
+}
+
+.form-1 .submit:after {
+    /* Size and position */
+    content: "";
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    top: -2px;
+    left: 30px;
+ 
+    /* Styles */
+    background: #ffffff;
+     
+    /* Other masks trick */
+    box-shadow: 0 62px white, -32px 31px white;
+}
+
+/*--------END STYLE FORM-------*/
